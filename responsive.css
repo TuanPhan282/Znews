@@ -1,0 +1,327 @@
+/* responsive */
+@media only screen and (max-width: 1023px) {
+    /* header */
+    .header {
+        width: fit-content;
+    }
+    .header .navbar,
+    .header .search-icon {
+        display: none;
+    }
+
+    /* hot-new */
+    .hot_new {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .hot_new .left {
+        max-width: 40%;
+    }
+    .hot_new .right {
+        max-width: 60%;
+        /* width: ; */
+        margin: 0 20px 0 0;
+    }
+    .hot_new .right .list_new {
+        /* width: ; */
+    }
+    .right .new_item {
+        max-width: 50%;
+        width: 49%;
+        margin-left: 0;
+    }
+    .right .new_item:first-child {
+        max-width: 100%;
+        width: 100%;
+    }
+    .right .new_item:last-child {
+        margin-left: 1.5%;
+    }
+    /* book */
+    .books {
+    }
+
+    .list_book {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .book_item {
+        float: left;
+        max-width: 280px;
+        width: 32%;
+        margin-left: 1.6%;
+    }
+    .book_item:first-child {
+        margin-left: 0;
+    }
+    .book_item:nth-child(4),
+    .book_item:nth-child(5) {
+        display: none;
+    }
+    .book_item img {
+    }
+    .book_item a {
+    }
+
+    /* multimedia */
+    .multimedia .list-feature {
+        display: none;
+    }
+    .list-new .new-item {
+        max-width: 50%;
+        width: 49%;
+        margin-left: 0;
+    }
+    .list-new .new-item a {
+        font-size: 20px;
+    }
+
+    .list-new .new-item:first-child {
+        text-align: center;
+        max-width: 100%;
+        width: 100%;
+    }
+    .list-new .new-item:first-child a {
+        font-size: 28px;
+    }
+    .list-new .new-item:first-child p {
+        margin-bottom: 20px;
+    }
+
+    .list-new .new-item:nth-child(3),
+    .list-new .new-item:nth-child(5) {
+        margin-left: 2%;
+    }
+
+    /* old new */
+    .old_new {
+        width: 100%;
+    }
+    .old_new .left {
+        width: 100%;
+    }
+    .old_new .right {
+        display: none;
+    }
+    .old_new .list_old {
+    }
+    .old_new .old_item {
+    }
+    .old_item::after {
+        top: 107%;
+    }
+    .old_new .old_item img {
+        max-width: 290px;
+    }
+    .old_new .old_item a {
+        font-size: 20px;
+    }
+
+    /* kinh doanh */
+    .business {
+        display: block;
+    }
+    .business .left {
+        width: 100%;
+    }
+    .business .left .list_business {
+        width: 100%;
+    }
+    .business .left .business_item {
+        max-width: 280px;
+        margin-left: 3%;
+    }
+    .business .left .business_item:first-child {
+        max-width: 580px;
+        margin-left: 0;
+    }
+
+    .business .right {
+        width: 100%;
+        padding: 0;
+        border: none;
+    }
+    .business .right .list_business {
+        display: inline-block;
+        width: 100%;
+    }
+    .business .right .business_item {
+        width: 49%;
+        float: left;
+    }
+    .business .right .business_item:nth-child(2),
+    .business .right .business_item:nth-child(4) {
+        margin-left: 2%;
+    }
+    .business .right .business_item:nth-child(2) {
+        margin-top: 0;
+    }
+    .business .right .business_item:nth-child(5) {
+        display: none;
+    }
+    .business .right .business_item:nth-child(3)::after,
+    .business .right .business_item:nth-child(4)::after {
+        display: none;
+    }
+
+    /* magazine */
+    .magazine_item:nth-child(4) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    /* hot-new */
+    .hot_new {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .hot_new .left {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .hot_new .left .list_new {
+        width: 100%;
+    }
+    .hot_new .left .new_item {
+        width: 100%;
+    }
+    .hot_new .left .new_item:first-child::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 0.5px;
+        background-color: #aeaeae;
+        top: -20px;
+    }
+    .hot_new .left .new_item::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 0.5px;
+        background-color: #aeaeae;
+        top: 154px;
+    }
+    .hot_new .left .new_item img {
+        width: 205px;
+        height: 140px;
+    }
+    .hot_new .left .new_item a {
+        font-size: 20px;
+    }
+    .hot_new .right {
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+    }
+    .hot_new .right .list_new {
+        /* width: ; */
+    }
+    .right .new_item {
+        max-width: 50%;
+        width: 49%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .right .new_item p {
+        display: none;
+    }
+    .right .new_item:first-child {
+        max-width: 100%;
+        width: 100%;
+    }
+    .right .new_item:first-child a {
+        font-size: 28px;
+    }
+    .right .new_item:last-child {
+        margin-left: 1.5%;
+    }
+
+    /* book */
+    .books {
+        margin: 0 auto;
+    }
+
+    .list_book {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .book_item {
+        float: left;
+        max-width: 280px;
+        width: 48%;
+        margin-left: 3%;
+    }
+    .book_item:first-child {
+        margin-left: 0;
+    }
+    .book_item:nth-child(3) {
+        display: none;
+    }
+    .book_item img {
+    }
+    .book_item a {
+    }
+
+    /* kinh doanh */
+    .business .left {
+        width: 100%;
+    }
+    .business .left .list_business {
+        width: 100%;
+    }
+    .business .left .business_item {
+        max-width: 50%;
+        width: 49%;
+        margin-left: 0;
+    }
+    .business .left .business_item:nth-child(3) {
+        margin-left: 2%;
+    }
+    .business .left .business_item:first-child {
+        max-width: 100%;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .business .right {
+        width: 100%;
+        padding: 0;
+        border: none;
+    }
+    .business .right .list_business {
+        display: inline-block;
+        width: 100%;
+    }
+    .business .right .business_item {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+    .business .right .business_item:first-child {
+        margin: 0 0 20px 0;
+    }
+    .business .right .business_item:nth-child(2),
+    .business .right .business_item:nth-child(4) {
+        margin-left: 0;
+    }
+    .business .right .business_item:nth-child(2) {
+        margin-top: 0;
+    }
+    .business .right .business_item:nth-child(5) {
+        display: none;
+    }
+    .business .right .business_item:nth-child(3)::after,
+    .business .right .business_item:nth-child(4)::after {
+        display: block;
+    }
+
+    /* magazine */
+    .magazine_item:nth-child(3) {
+        display: none;
+    }
+}

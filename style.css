@@ -1,0 +1,510 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.subtitle {
+    font-family: "Roboto", serif;
+    color: #444;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a,
+p,
+h2 {
+    color: #333;
+}
+h2 {
+    position: relative;
+    font-size: 20px;
+    margin-right: 30px;
+    margin-left: 20px;
+}
+h2::before {
+    position: absolute;
+    content: "";
+    width: 5px;
+    left: -15px;
+    top: 2px;
+    bottom: 2px;
+    transform: skew(-20deg);
+    background-color: #dd3333;
+}
+
+a {
+    text-decoration: none;
+    /* display: inline-block; */
+}
+
+.content {
+    display: block;
+    max-width: 1070px;
+    width: 93%;
+    margin: 0 auto;
+}
+/* header */
+.fixed {
+    width: 100%;
+    display: block;
+    z-index: 100000;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+}
+.header {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1070px;
+    width: 86%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fixed::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0.5px;
+    background-color: #d4d4d4;
+    top: 46px;
+    left: 0;
+}
+.branch img {
+    width: 180px;
+}
+
+.header .navbar {
+    display: flex;
+    gap: 30px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.header .nav-item:hover a {
+    color: #04b2f7;
+    padding-bottom: 14px;
+    border-bottom: #04b2f7 solid 3px;
+}
+/* hot new */
+.hot_new {
+    display: flex;
+    max-width: 1070px;
+    width: 93%;
+    margin: 60px auto 0;
+}
+.hot_new .left {
+    max-width: 30%;
+    width: 29%;
+    display: block;
+}
+.left .new_item {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.left .new_item::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0.5px;
+    background-color: #d4d4d4;
+    top: 95px;
+}
+.left .new_item:last-child::after {
+    width: 0;
+    height: 0;
+}
+
+.left .new_item img {
+    width: 120px;
+    height: 80px;
+}
+.left .new_item a {
+    font-size: 12.8px;
+    font-weight: 600;
+}
+
+/* right */
+.hot_new .right {
+    max-width: 70%;
+    width: 73%;
+    display: block;
+    margin-left: 20px;
+}
+.hot_new .right .list_new {
+    display: inline-block;
+    width: 99%;
+}
+.right .new_item {
+    float: left;
+    max-width: 240px;
+    width: 33%;
+    margin-left: 2%;
+    margin-bottom: 20px;
+}
+.right .new_item:first-child {
+    max-width: 480px;
+    width: 65%;
+    margin: 0 0 20px;
+}
+.right .new_item:first-child a {
+    font-size: 32px;
+    font-weight: 600;
+}
+.right .new_item img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.right .new_item a {
+    font-weight: 600;
+}
+
+/* books */
+.books {
+    display: block;
+    max-width: 1070px;
+    width: 93%;
+    margin: 0 auto;
+}
+.books h2 {
+    font-weight: 600;
+}
+
+.list_book {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.book_item {
+    border: 0.5px solid #aeaeae;
+    border-radius: 5px;
+    max-width: 200px;
+}
+.book_item img {
+    width: 100%;
+}
+.book_item a {
+    display: inline-block;
+    margin: 10px;
+    font-size: 14.4px;
+    font-weight: 600;
+}
+
+/* multimedia */
+.multimedia {
+    max-width: 1100px;
+    width: calc(100%-60px);
+    display: block;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: rgb(255, 222, 118);
+}
+.subnav {
+    display: flex;
+    align-items: center;
+}
+
+.list-feature {
+    display: flex;
+    gap: 30px;
+}
+.feature {
+    font-size: 14px;
+    font-weight: 600;
+}
+.feature:hover a {
+    color: #dd3333;
+}
+
+.image {
+    width: 100%;
+}
+
+.new-item .title {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.new-item .subtitle {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.list-new {
+    width: 100%;
+    display: inline-block;
+    margin-top: 20px;
+}
+.list-new .new-item {
+    max-width: 258px;
+    width: 24%;
+    float: left;
+    margin-left: 1.5%;
+}
+
+.list-new .new-item:first-child {
+    max-width: 539px;
+    width: 49%;
+    margin-left: 0;
+}
+.list-new .new-item img {
+    width: 100%;
+}
+
+/* Old new */
+.old_new {
+    display: flex;
+    justify-content: space-between;
+}
+
+.old_new .left {
+    width: 60%;
+}
+
+.list_old {
+    display: inline-block;
+}
+
+.old_item {
+    position: relative;
+    float: left;
+    gap: 20px;
+    margin: 15px 0;
+}
+
+.old_item::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0.5px;
+    background-color: #d4d4d4;
+    top: 109%;
+    left: 0;
+}
+.old_item:last-child::after {
+    display: none;
+}
+
+.old_item img {
+    max-width: 225px;
+    width: 35%;
+    float: left;
+    margin-right: 20px;
+}
+.old_item .contain {
+    display: block;
+}
+
+.old_item a {
+    font-size: 20;
+    font-weight: 600;
+}
+
+.old_item p {
+    font-size: 14;
+    color: #888888;
+}
+
+hr {
+    border-top: #d4d4d4 solid 0px;
+}
+
+.old_new .right {
+    width: 25%;
+    height: fit-content;
+    margin-top: 100px;
+    padding: 25px;
+    border: #d4d4d4 solid 0.5px;
+}
+.most-viewed {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+.most-viewed:last-child {
+    margin: 0;
+}
+
+.most-viewed img {
+    width: 72px;
+    height: 72px;
+    border-radius: 5px;
+}
+
+.most-viewed .desc {
+}
+.most-viewed .desc p {
+    margin: 0;
+    padding: 0;
+}
+
+.most-viewed .desc p:first-child {
+    font-size: 10px;
+    color: #5c5c5c;
+}
+
+.most-viewed .desc p:last-child {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* Kinh doanh */
+.business {
+    display: flex;
+    margin-top: 25px;
+}
+
+.business .left {
+    display: block;
+    width: 70%;
+    padding: 0 25px 25px 0;
+}
+.business .left .list_business {
+    display: inline-block;
+    width: 100%;
+}
+.business .left .business_item {
+    max-width: 220px;
+    width: 31%;
+    margin-bottom: 30px;
+    float: left;
+    margin-left: 2%;
+}
+
+.business .left .business_item:first-child {
+    max-width: 457px;
+    width: 64%;
+}
+.business .left .business_item:first-child a {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.business .left .business_item:first-child p {
+    font-size: 14px;
+    color: #444;
+}
+.business .left .business_item img {
+    width: 100%;
+}
+.business .left .business_item a {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.business .right {
+    width: 30%;
+    height: fit-content;
+    padding: 0 0 25px 25px;
+    border-left: #d4d4d4 solid 0.5px;
+}
+.business .right .list_business {
+}
+.business .right .business_item {
+    position: relative;
+    display: flex;
+    margin: 20px 0;
+}
+.business .right .business_item::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0.5px;
+    background-color: #d4d4d4;
+    top: 80px;
+}
+.business .right .business_item:first-child {
+    margin: 0;
+}
+.business .right .business_item:last-child::after {
+    display: none;
+}
+.business .right .business_item a {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.business .right .business_item img {
+    width: 72px;
+    height: 72px;
+    border-radius: 5px;
+}
+
+/* Tạp chí */
+.magazine {
+}
+.magazine .list_magazine {
+    display: flex;
+    gap: 20px;
+}
+.magazine .magazine_item {
+    position: relative;
+    width: 260px;
+    height: 435px;
+    background-image: url("/images/background-img.webp");
+    background-position: center;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.magazine .magazine_item .type {
+    position: absolute;
+    content: "";
+    background-color: #ffde76;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 0 0 4px 4px;
+    text-align: center;
+    padding: 5px 10px;
+    z-index: 1000;
+}
+.magazine .magazine_item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    z-index: 1;
+}
+.magazine .magazine_item p {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    padding: 250px 20px 0;
+    z-index: 10000;
+}
+.magazine .magazine_item p::before {
+    position: absolute;
+    content: "";
+    top: 230px;
+    left: 40%;
+    width: 50px;
+    height: 5px;
+    background-color: #ffde76;
+}
+.magazine_icon {
+    width: 48px;
+    height: 48px;
+    fill: #ffde76;
+}
